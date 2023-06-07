@@ -17,7 +17,7 @@ function complete() {
     loader.hidden = true;
 }
 
-// Show new quote
+
 function newQuote() {
     loading();
     const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
@@ -34,7 +34,7 @@ function newQuote() {
     quoteText.textContent = quote.text;
     complete();
 }
-// GET quotes from API
+
 async function getQuotes() {
     loading();
     const apiUrl = 'https://jacintodesign.github.io/quotes-api/data/quotes.json';
